@@ -181,8 +181,8 @@ def optimize(w,b,X,Y):
     grads,cost=propagation(w,b,X,Y)
     dw=grads["dw"]
     db=grads["db"]
-    w=w-(0.2*dw)
-    b=b-(0.2*db)
+    w=w-(0.002*dw)
+    b=b-(0.002*db)
   
   params={"w":w,
           "b":b}
